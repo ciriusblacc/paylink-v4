@@ -24,11 +24,6 @@ const TopUpModal: React.FC<TopUpModalProps> = ({ isOpen, onClose, onSuccess }) =
   const currencySymbol = currency === 'USD' ? '$' : '₹';
   const conversionRate = currency === 'USD' ? 1 : 83.33;
   const stablecoinRate = currency === 'USD' ? 1 : 0.012; // Same number of stablecoins for both currencies
-  const { currency } = useLocation();
-
-  const currencySymbol = currency === 'USD' ? '$' : '₹';
-  const conversionRate = currency === 'USD' ? 1 : 83.33;
-  const stablecoinRate = currency === 'USD' ? 1 : 0.012; // Same number of stablecoins for both currencies
 
   const quickAmounts = currency === 'USD' ? [10, 25, 50, 100] : [100, 500, 1000, 2500];
 
